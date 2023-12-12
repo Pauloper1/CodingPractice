@@ -56,9 +56,9 @@ public class subQuerySum {
             int endRow = query.get(2);
             int endCol = query.get(3);
             int sum = 0;
-            for(; startRow <= endRow; startRow++ ){
-                for(; startCol <= endCol; startCol++){
-                    sum += arr.get(startRow).get(startCol);
+            for(int i = startRow; i <= endRow; i++ ){
+                for(int j = startCol; j <= endCol; j++){
+                    sum += arr.get(i).get(j);
                 }
             }
             result.add(sum);
