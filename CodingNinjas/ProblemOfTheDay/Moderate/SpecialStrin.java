@@ -15,7 +15,7 @@ class SpecialStrin {
             System.out.println(specialString(s, n, p));
             testCases--;
         }
-
+        input.close();
     }
     public static String specialString(String s, int n, int p) {
 		//1. create all possible strings

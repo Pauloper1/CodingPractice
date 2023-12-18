@@ -12,5 +12,7 @@ public class Domino {
         int m = input.nextInt();
         int n = input.nextInt();
         System.out.println((int)m*n/2);
+        input.close();
     }
+
 }

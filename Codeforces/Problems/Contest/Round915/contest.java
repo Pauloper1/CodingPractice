@@ -11,6 +11,6 @@ public class contest {
             int m = input.nextInt();
             System.out.println(n>m?n:m);
             testCases--;
-        }
+        }input.close();
     }
 }

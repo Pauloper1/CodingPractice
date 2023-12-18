@@ -28,6 +28,7 @@ public class Bits {
             }
             testCases--;
         }
+        input.close();
         System.out.println(val);
     }
 }

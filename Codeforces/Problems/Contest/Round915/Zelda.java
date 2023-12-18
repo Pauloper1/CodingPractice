@@ -35,5 +35,6 @@ public class Zelda {
             System.out.println(Math.ceilDiv(noLeaf, 2));
             testCases--;
         }
+        input.close();
     }
 }
