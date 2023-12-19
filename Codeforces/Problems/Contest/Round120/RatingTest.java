@@ -1,3 +1,4 @@
+package Codeforces.Problems.Contest.Round120;
 // package Codeforces.Problems.Contest.Round120.Tests;
 
 // import static org.junit.Assert.assertEquals;

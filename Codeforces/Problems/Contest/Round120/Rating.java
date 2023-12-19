@@ -1,7 +1,7 @@
 /*
  * Status: Not working
  */
-package Codeforces.Problems.Contest.Round120.Tests;
+package Codeforces.Problems.Contest.Round120;
 
 import java.util.Scanner;
 
