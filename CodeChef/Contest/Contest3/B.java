@@ -11,29 +11,33 @@ import java.lang.*;
 import java.io.*;
 
 public class B {
-    public static void main(String[] args) throws java.lang.Exception {
-        Scanner input = new Scanner(System.in);
-        int tc = input.nextInt();
-        while (tc > 0) {
-            int size = input.nextInt();
-            int arr[] = new int[size];
-            for(int i = 0; i < size; i++){
-                arr[i] = input.nextInt();
-            }
-            int arrChecker[] = new int[size];
-            Arrays.fill(arrChecker, -1);
-            int count = 0;
-            for (int i = 0; i < size - 1; i++) {
-                for (int j = i + 1; j < size; j++) {
-                    if ((arr[i] > arr[j]) && arrChecker[j] != 1) {
-                        count += 1;
-                        arrChecker[j] = 1;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int tc = Integer.parseInt(br.readLine());
 
-                    }
+        StringBuilder sb = new StringBuilder();
+        while (tc-- > 0) {
+            int size = Integer.parseInt(br.readLine());
+            int arr[] = new int[size];
+
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            for (int i = 0; i < size; i++) {
+                arr[i] = Integer.parseInt(st.nextToken());
+            }
+
+            int count = 0;
+
+            for (int i = 0; i < size - 1; i++) {
+                int right = i + 1;
+                while (right < size && arr[right] < arr[i] && arr[i] != -1) {
+                    arr[right] = -1;
+                    right += 1;
+                    count += 1;
                 }
             }
-            System.out.println(count);
-            tc--;
+            sb.append(count).append("\n");
         }
+
+        System.out.print(sb.toString());
     }
 }
