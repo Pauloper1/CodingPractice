@@ -13,7 +13,9 @@ public class A {
             System.out.println(new Solver().solve(len, log));
             tc--;
         }
+        input.close();
     }
+
 }
 
 /**

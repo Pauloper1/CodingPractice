@@ -61,6 +61,6 @@ public class Nutrition {
             System.out.println(sum);
             testCases--;
         }
-
+        input.close();
     }
 }

@@ -9,6 +9,7 @@ public class Petya {
         input.nextLine();
         String b = input.nextLine();
         System.out.println(new Solver().solve(a, b));
+        input.close();
     }
 }
 

@@ -12,6 +12,7 @@ public class B {
             System.out.println(new Solver().solve(n, k).toString());
             tc--;
         }
+        input.close();
     }
 }
 

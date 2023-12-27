@@ -20,6 +20,7 @@ public class BeautifulMatrix {
             }
         }
         System.out.println(Math.abs(iLoc - 2) + Math.abs(jLoc - 2));
+        input.close();
     }
 
 }
