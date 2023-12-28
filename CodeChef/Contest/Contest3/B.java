@@ -1,5 +1,5 @@
 /*
- * Status: Time Limit Exceeded
+ * Status: Success
  * Contest: STARTERS 114
  * Platform: Codechef
  */
